@@ -417,7 +417,7 @@ h4 {
 }
 
 /* Gift Section */
-.gift-section {
+/* .gift-section {
     display: flex;
     height: 80svh;
     justify-content: flex-start;
@@ -482,7 +482,7 @@ h4 {
     padding: 8px 10px;
     border-radius: 5px;
     background-color: rgb(39, 154, 255);
-}
+} */
 
 /* Music */
 #backgroundMusic{

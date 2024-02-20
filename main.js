@@ -51,63 +51,63 @@ document.getElementById('hideButton').addEventListener('click', function () {
 
 });
 
-document.getElementById('copyBRI').addEventListener('click', function () {
-  // Get the text you want to copy
-  var textToCopy = "0007 0112 1958 504";
+// document.getElementById('copyBRI').addEventListener('click', function () {
+//   // Get the text you want to copy
+//   var textToCopy = "0007 0112 1958 504";
 
-  // Create a temporary input element
-  var tempInput = document.createElement('input');
-  tempInput.value = textToCopy;
+//   // Create a temporary input element
+//   var tempInput = document.createElement('input');
+//   tempInput.value = textToCopy;
 
-  // Append the input element to the body
-  document.body.appendChild(tempInput);
+//   // Append the input element to the body
+//   document.body.appendChild(tempInput);
 
-  // Select the text inside the input element
-  tempInput.select();
-  tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+//   // Select the text inside the input element
+//   tempInput.select();
+//   tempInput.setSelectionRange(0, 99999); /* For mobile devices */
 
-  // Copy the selected text to the clipboard
-  document.execCommand('copy');
+//   // Copy the selected text to the clipboard
+//   document.execCommand('copy');
 
-  // Remove the temporary input element
-  document.body.removeChild(tempInput);
-});
+//   // Remove the temporary input element
+//   document.body.removeChild(tempInput);
+// });
 
-document.getElementById('copyBNI').addEventListener('click', function () {
-  // Get the text you want to copy
-  var textToCopy = "0482966654";
+// document.getElementById('copyBNI').addEventListener('click', function () {
+//   // Get the text you want to copy
+//   var textToCopy = "0482966654";
 
-  // Create a temporary input element
-  var tempInput = document.createElement('input');
-  tempInput.value = textToCopy;
+//   // Create a temporary input element
+//   var tempInput = document.createElement('input');
+//   tempInput.value = textToCopy;
 
-  // Append the input element to the body
-  document.body.appendChild(tempInput);
+//   // Append the input element to the body
+//   document.body.appendChild(tempInput);
 
-  // Select the text inside the input element
-  tempInput.select();
-  tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+//   // Select the text inside the input element
+//   tempInput.select();
+//   tempInput.setSelectionRange(0, 99999); /* For mobile devices */
 
-  // Copy the selected text to the clipboard
-  document.execCommand('copy');
+//   // Copy the selected text to the clipboard
+//   document.execCommand('copy');
 
-  // Remove the temporary input element
-  document.body.removeChild(tempInput);
-});
+//   // Remove the temporary input element
+//   document.body.removeChild(tempInput);
+// });
 
 
-document.getElementById('whatsappButton').addEventListener('click', function () {
-  let phoneNumber = '6289681000225';
+// document.getElementById('whatsappButton').addEventListener('click', function () {
+//   let phoneNumber = '6289681000225';
 
-  // You can customize the message by appending it to the URL
-  let message = encodeURIComponent('Saya ingin mengirim bukti transfer (foto)');
+//   // You can customize the message by appending it to the URL
+//   let message = encodeURIComponent('Saya ingin mengirim bukti transfer (foto)');
 
-  // Create the WhatsApp link
-  let whatsappLink = 'whatsapp://send?phone=' + phoneNumber + '&text=' + message;
+//   // Create the WhatsApp link
+//   let whatsappLink = 'whatsapp://send?phone=' + phoneNumber + '&text=' + message;
 
-  // Open the link in a new tab or the same tab, depending on your requirements
-  window.location.href = whatsappLink;
-});
+//   // Open the link in a new tab or the same tab, depending on your requirements
+//   window.location.href = whatsappLink;
+// });
 
 
 let backgroundMusic = document.getElementById('backgroundMusic');
