@@ -22,6 +22,9 @@ document.getElementById('hideButton').addEventListener('click', function () {
   let elementsToShow = document.querySelectorAll('.hidden');
   let totalElementsToHide = elementsToHide.length;
   let elementsHidden = 0;
+  let backgroundMusic = document.getElementById('backgroundMusic');
+  
+
 
   elementsToHide.forEach(function (element) {
     element.classList.add('vanish');
@@ -41,9 +44,14 @@ document.getElementById('hideButton').addEventListener('click', function () {
       }
     }, { once: true });
   });
+
+  var cutTime = 10; // Adjust this value based on your requirement
+  backgroundMusic.currentTime = cutTime;
+  backgroundMusic.play();
+
 });
 
-document.getElementById('copyBRI').addEventListener('click', function() {
+document.getElementById('copyBRI').addEventListener('click', function () {
   // Get the text you want to copy
   var textToCopy = "0007 0112 1958 504";
 
@@ -65,7 +73,7 @@ document.getElementById('copyBRI').addEventListener('click', function() {
   document.body.removeChild(tempInput);
 });
 
-document.getElementById('copyBNI').addEventListener('click', function() {
+document.getElementById('copyBNI').addEventListener('click', function () {
   // Get the text you want to copy
   var textToCopy = "0482966654";
 
@@ -89,14 +97,28 @@ document.getElementById('copyBNI').addEventListener('click', function() {
 
 
 document.getElementById('whatsappButton').addEventListener('click', function () {
-  var phoneNumber = '6289681000225';
+  let phoneNumber = '6289681000225';
 
   // You can customize the message by appending it to the URL
-  var message = encodeURIComponent('Saya ingin mengirim bukti transfer (foto)');
+  let message = encodeURIComponent('Saya ingin mengirim bukti transfer (foto)');
 
   // Create the WhatsApp link
-  var whatsappLink = 'whatsapp://send?phone=' + phoneNumber + '&text=' + message;
+  let whatsappLink = 'whatsapp://send?phone=' + phoneNumber + '&text=' + message;
 
   // Open the link in a new tab or the same tab, depending on your requirements
   window.location.href = whatsappLink;
+});
+
+
+let backgroundMusic = document.getElementById('backgroundMusic');
+let toggleMusicButton = document.getElementById('toggleMusicButton');
+
+toggleMusicButton.addEventListener('click', function () {
+  if (backgroundMusic.paused) {
+    backgroundMusic.play();
+    toggleMusicButton.textContent = 'Pause Music';
+  } else {
+    backgroundMusic.pause();
+    toggleMusicButton.textContent = 'Play Music';
+  }
 });

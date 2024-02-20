@@ -484,8 +484,23 @@ h4 {
     background-color: rgb(39, 154, 255);
 }
 
+/* Music */
+#backgroundMusic{
+    visibility: hidden;
+    height: 0;
+}
 
-
+#toggleMusicButton{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
+    background-color: #393939;
+    padding: 12px 18px;
+    border: 2px solid #f2d188;
+    border-radius: 15px;
+    color: #fff;
+}
 
 /* Animation */
 
